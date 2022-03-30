@@ -6,4 +6,4 @@ jobs:
     container: rishabhpoddar/supertokens_go_driver_testing
     steps:
       - uses: actions/checkout@v2
-      - run: go version
+      - run: ls
