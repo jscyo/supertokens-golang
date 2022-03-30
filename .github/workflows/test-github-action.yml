@@ -9,4 +9,5 @@ jobs:
       - run: git init
       - run: pwd
       - run: go mod tidy
+      - run: git status
       - run: git status | grep -q 'nothing to commit, working tree clean' && exit 0 || exit 1
