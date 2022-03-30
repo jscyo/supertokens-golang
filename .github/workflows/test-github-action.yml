@@ -7,4 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: go mod tidy
+      - run: ls
+      - run: git status
       - run: git status | grep -q 'nothing to commit, working tree clean' && exit 0 || exit 1
